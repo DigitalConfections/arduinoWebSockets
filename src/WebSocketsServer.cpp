@@ -123,6 +123,10 @@ void WebSocketsServer::close(void) {
 
 }
 
+bool WebSocketsServer::isRunning(void) {
+    return _runnning;
+}
+
 #if (WEBSOCKETS_NETWORK_TYPE != NETWORK_ESP8266_ASYNC)
 /**
  * called in arduino loop
